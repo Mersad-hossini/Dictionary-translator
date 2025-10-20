@@ -1,50 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dictionary</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>دیکشنری آنلاین</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <audio id="sound"></audio>
     <div class="container">
-      <header>Word Defination</header>
-      <hr />
-      <div class="search">
+      <h1>دیکشنری فارسی ساده 🌍</h1>
+
+      <div class="search-box">
         <input
           type="text"
-          placeholder="Search here..."
-          required
-          spellcheck="false"
+          id="wordInput"
+          placeholder="کلمه انگلیسی را وارد کنید"
         />
-        <i class="fas fa-search"></i>
+        <button id="searchBtn">جستجو</button>
       </div>
-      <p class="info-text"></p>
-      <ul>
-        <li class="word">
-          <div class="details">
-            <p id="exact-word">asdasd</p>
-            <span id="type">asdasd</span>
-          </div>
-          <i class="fas fa-volume-up" class="volume" onclick="playSound()"></i>
-        </li>
-        <div class="content">
-          <li class="meaning">
-            <div class="details">
-              <p>Meaning</p>
-              <span id="meaning-word"></span>
-            </div>
-          </li>
-        </div>
-      </ul>
+
+      <div id="result" class="result"></div>
+
+      <button id="themeToggle" class="theme-btn">🌓 تغییر حالت</button>
     </div>
 
-    <script src="js/app.js"></script>
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
